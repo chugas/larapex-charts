@@ -485,6 +485,7 @@ class LarapexChart
             'legend' => [
                 'show' => $this->showLegend()
             ],
+            'tooltip' => json_decode($this->tooltip()),
         ];
 
         if($this->labels()) {
@@ -541,7 +542,8 @@ class LarapexChart
             'markers' => json_decode($this->markers()),
             'legend' => [
                 'show' => $this->showLegend()
-            ]
+            ],
+            'tooltip' => json_decode($this->tooltip()),
         ];
 
         if($this->labels()) {
