@@ -285,6 +285,12 @@ class LarapexChart
         return $this;
     }
 
+    public function setTooltip(array $tooltip = []) :LarapexChart
+    {
+        $this->tooltip = json_encode($tooltip);
+        return $this;
+    }
+
     /*
     |--------------------------------------------------------------------------
     | Getters
@@ -427,6 +433,11 @@ class LarapexChart
     public function showLegend(): string
     {
         return $this->showLegend ? 'true' : 'false';
+    }
+
+    public function tooltip(): string
+    {
+        return $this->tooltip;
     }
 
     /*
