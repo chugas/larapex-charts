@@ -42,6 +42,7 @@ class LarapexChart
     protected string $theme = 'light';
     protected string $sparkline;
     private string $chartLetters = 'abcdefghijklmnopqrstuvwxyz';
+    protected string $tooltip = '';
 
     /*
     |--------------------------------------------------------------------------
